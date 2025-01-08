@@ -1,0 +1,24 @@
+While there's no single perfect solution to ensure universal `:focus-visible` support, we can mitigate the inconsistencies.  This example uses a JavaScript polyfill and adds specific focus styles for better cross-browser and assistive technology compatibility.
+
+```css
+/* bugSolution.css */
+
+.focus-element:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.focus-element:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #007bff;
+}
+
+/*fallback styles for older browsers without :focus-visible*/
+.focus-element:focus:not(:focus-visible){
+  box-shadow: 0 0 0 2px #007bff;
+}
+```
+
+Include a JavaScript polyfill to enhance `:focus-visible` support in older browsers.
+
+Note: Testing with different assistive technologies and browsers is crucial to ensure the focus styles are accessible and meet your design requirements.
