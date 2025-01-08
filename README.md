@@ -1,0 +1,1 @@
+This repository demonstrates a bug with the CSS `:focus-visible` pseudo-class.  The focus styles are not applying consistently, especially when assistive technologies are involved. The `bug.css` file shows the original, problematic code.  The `bugSolution.css` file offers a possible workaround and additional considerations for ensuring consistent focus styling.
