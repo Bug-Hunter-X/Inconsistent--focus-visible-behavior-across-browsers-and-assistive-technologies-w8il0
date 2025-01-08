@@ -1,0 +1,1 @@
+The CSS rule `:focus-visible` is not working as expected.  I'm trying to style focused elements only when the focus is not managed by assistive technologies like screen readers or keyboard navigation. However, the styles aren't applying consistently across browsers or assistive technologies.
